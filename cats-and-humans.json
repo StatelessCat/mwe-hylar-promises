@@ -1,0 +1,102 @@
+[
+  {
+    "@id": "http://ex.co/ins/Jerry"
+  },
+  {
+    "@id": "http://ex.co/ins/Tom",
+    "http://ex.co/ont/hasCat": [
+      {
+        "@id": "http://ex.co/ins/Jerry"
+      }
+    ]
+  },
+  {
+    "@id": "http://ex.co/ont/Cat",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://ex.co/ont/Mammal"
+      }
+    ]
+  },
+  {
+    "@id": "http://ex.co/ont/Human",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://ex.co/ont/Mammal"
+      }
+    ]
+  },
+  {
+    "@id": "http://ex.co/ont/Mammal",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ]
+  },
+  {
+    "@id": "http://ex.co/ont/hasCat",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.w3.org/2002/07/owl#topObjectProperty"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "http://ex.co/ont/hasOwner"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://ex.co/ont/Human"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://ex.co/ont/Cat"
+      }
+    ]
+  },
+  {
+    "@id": "http://ex.co/ont/hasOwner",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://ex.co/ont/Cat"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://ex.co/ont/Human"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.semanticweb.org/raph/ontologies/2016/7/untitled-ontology-6",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Ontology"
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/2002/07/owl#Class"
+  },
+  {
+    "@id": "http://www.w3.org/2002/07/owl#ObjectProperty"
+  },
+  {
+    "@id": "http://www.w3.org/2002/07/owl#Ontology"
+  },
+  {
+    "@id": "http://www.w3.org/2002/07/owl#topObjectProperty"
+  }
+]
+
