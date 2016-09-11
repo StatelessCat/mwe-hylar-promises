@@ -5,7 +5,17 @@ const mimeType = 'application/ld+json'
 
 const catsOnto = fs.readFileSync('./cats-and-humans.json', 'utf8')
 
+function asyncFunc() {
+  return new Promise(
+    function (resolve, reject) {
+      
+      resolve(result)
+      reject(error)
+    })
+}
+
 const hylarLoadTest = function (jsonld) {
+
   var Hylar = new H()
   Hylar.load(jsonld, mimeType)
     .then(function (response) {
@@ -19,6 +29,7 @@ const hylarLoadTest = function (jsonld) {
     .catch(function (err) {
       console.log('#ERR#', err)
     })
+  
 }
 
 hylarLoadTest(catsOnto)
