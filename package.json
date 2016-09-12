@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/StatelessCat/mwe-hylar-promises#readme",
   "dependencies": {
+    "bluebird": "^3.4.6",
     "hylar": "1.7.6"
   },
   "devDependencies": {
